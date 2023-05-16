@@ -5,6 +5,8 @@
   class="utility-bar color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} utility-bar--bottom-border{% endif %}"
   {{ block.shopify_attributes }}
 >
+
+
   {%- if section.blocks.size == 1 -%}
     <div class="announcement-bar" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
       {%- if section.blocks.first.settings.text != blank -%}
